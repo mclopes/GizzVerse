@@ -17,6 +17,23 @@
       color: #ff3c00;
       margin-top: 20px;
     }
+    .filters {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .filters button {
+      background: #ff3c00;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      margin: 0.25rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .filters button.active {
+      background: #ff9500;
+    }
     .timeline {
       display: flex;
       flex-direction: column;
@@ -67,6 +84,13 @@
 </head>
 <body>
   <h1>The Gizzverse Timeline</h1>
+
+  <div class="filters">
+    <button onclick="filterEvents('All')" class="active">All</button>
+    <button onclick="filterEvents('Main Story')">Main Story</button>
+    <button onclick="filterEvents('Side Story')">Side Story</button>
+  </div>
+
   <div class="timeline" id="timeline"></div>
 
   <audio autoplay loop hidden>
@@ -76,42 +100,60 @@
 
   <script>
     const wikiCovers = {
-      "Polygondwanaland": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Polygondwanaland.jpg/250px-Polygondwanaland.jpg",
-      "I'm In Your Mind Fuzz": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/I%27m_in_Your_Mind_Fuzz_King_Gizzard.jpg/250px-I%27m_in_Your_Mind_Fuzz_King_Gizzard.jpg",
-      "Nonagon Infinity": "https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Nonagon_Infinity.png/250px-Nonagon_Infinity.png",
-      "Murder of the Universe": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Murder_of_the_Universe.png/250px-Murder_of_the_Universe.png",
-      "Sketches of Brunswick East": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/King_Gizzard_%26_the_Lizard_Wizard_-_Sketches_of_Brunswick_East_%282017%29_cover_art.jpg/250px-King_Gizzard_%26_the_Lizard_Wizard_-_Sketches_of_Brunswick_East_%282017%29_cover_art.jpg",
-      "Infest the Rats' Nest": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/King_Gizzard_%26_the_Lizard_Wizard_-_Infest_the_Rats%27_Nest.png/250px-King_Gizzard_%26_the_Lizard_Wizard_-_Infest_the_Rats%27_Nest.png",
-      "The Silver Cord": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/The_Silver_Chord.webp/250px-The_Silver_Chord.webp.png",
-      "Flight b741": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/FlightB741.jpg/250px-FlightB741.jpg",
-      "Phantom Island": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Phantom_Island_Album_Cover.png/250px-Phantom_Island_Album_Cover.png"
+      "Polygondwanaland": "https://upload.wikimedia.org/wikipedia/en/9/9c/Polygondwanaland_cover_art.jpg",
+      "I'm In Your Mind Fuzz": "https://upload.wikimedia.org/wikipedia/en/f/f7/King_Gizzard_and_the_Lizard_Wizard_-_I%27m_in_Your_Mind_Fuzz.png",
+      "Nonagon Infinity": "https://upload.wikimedia.org/wikipedia/en/3/36/Nonagon_Infinity_album_cover.jpg",
+      "Murder of the Universe": "https://upload.wikimedia.org/wikipedia/en/8/8e/Murder_of_the_Universe_artwork.jpg",
+      "Sketches of Brunswick East": "https://upload.wikimedia.org/wikipedia/en/b/b5/Sketches_of_Brunswick_East_by_King_Gizzard_and_the_Lizard_Wizard.png",
+      "Infest the Rats' Nest": "https://upload.wikimedia.org/wikipedia/en/5/5f/Infest_the_Rats%27_Nest_album_cover.jpg",
+      "The Silver Cord": "https://upload.wikimedia.org/wikipedia/en/d/d8/The_Silver_Cord_Album_Cover_by_King_Gizzard_and_the_Lizard_Wizard.jpg",
+      "Flight b741": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flight_b741_album_cover.jpg",
+      "Phantom Island": "https://upload.wikimedia.org/wikipedia/en/e/e3/Phantom_Island_album_cover.jpg"
     };
 
-    fetch('https://mclopes.github.io/GizzVerse/gizzverse_timeline.json')
+    let allEvents = [];
+    let currentFilter = 'All';
+
+    function renderTimeline(data) {
+      const timeline = document.getElementById('timeline');
+      timeline.innerHTML = '';
+      data.forEach(event => {
+        if (currentFilter !== 'All' && event.type !== currentFilter) return;
+
+        const div = document.createElement('div');
+        div.className = 'event';
+
+        const albumCover = wikiCovers[event.album] || '';
+        const albumImageHTML = albumCover ? `<img src="${albumCover}" alt="${event.album} Cover" class="album-art">` : '';
+
+        div.innerHTML = `
+          <h2>${event.event}</h2>
+          <div class="meta">
+            <strong>Album:</strong> ${event.album} (${event.year})<br>
+            <strong>Song:</strong> ${event.song}<br>
+            <strong>Type:</strong> ${event.type}<br>
+            <strong>Contribution:</strong> ${event.contribution}
+          </div>
+          <p>${event.description}</p>
+          ${albumImageHTML}
+          <iframe src="https://open.spotify.com/embed/search/${encodeURIComponent(event.song + ' ' + event.album)}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        `;
+        timeline.appendChild(div);
+      });
+    }
+
+    function filterEvents(type) {
+      currentFilter = type;
+      document.querySelectorAll('.filters button').forEach(btn => btn.classList.remove('active'));
+      document.querySelector(`.filters button[onclick*="${type}"]`).classList.add('active');
+      renderTimeline(allEvents);
+    }
+
+    fetch('https://mclopes.github.io/GizzVerse/gizzverse_timeline_full.json')
       .then(response => response.json())
       .then(data => {
-        const timeline = document.getElementById('timeline');
-        data.forEach(event => {
-          const div = document.createElement('div');
-          div.className = 'event';
-
-          const albumCover = wikiCovers[event.album] || '';
-          const albumImageHTML = albumCover ? `<img src="${albumCover}" alt="${event.album} Cover" class="album-art">` : '';
-
-          div.innerHTML = `
-            <h2>${event.event}</h2>
-            <div class="meta">
-              <strong>Album:</strong> ${event.album} (${event.year})<br>
-              <strong>Song:</strong> ${event.song}<br>
-              <strong>Type:</strong> ${event.type}<br>
-              <strong>Contribution:</strong> ${event.contribution}
-            </div>
-            <p>${event.description}</p>
-            ${albumImageHTML}
-            <iframe src="https://open.spotify.com/embed/search/${encodeURIComponent(event.song + ' ' + event.album)}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          `;
-          timeline.appendChild(div);
-        });
+        allEvents = data;
+        renderTimeline(data);
       })
       .catch(err => {
         document.getElementById('timeline').innerHTML = '<p>Failed to load timeline data.</p>';
