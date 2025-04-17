@@ -90,9 +90,64 @@
       object-fit: contain;
       border-radius: 8px;
     }
-  </style>
+    .nonagon-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 50%;
+    background: repeating-conic-gradient(
+      from 0deg,
+      #ff3c00 0deg 40deg,
+      transparent 40deg 80deg
+    );
+    opacity: 0.03;
+    z-index: 0;
+    animation: spin 60s linear infinite;
+    pointer-events: none;
+  }
+
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+  .legend {
+    position: fixed;
+    right: 1rem;
+    top: 5rem;
+    background: #1e1e1e;
+    border: 1px solid #ff3c00;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    max-width: 200px;
+    z-index: 10;
+  }
+  .legend h3 {
+    margin-top: 0;
+    color: #ff9500;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+  .legend div {
+    margin-bottom: 0.25rem;
+  }
 </head>
 <body>
+  <div class="nonagon-bg"></div>
+
+  <div class="legend">
+    <h3>Legend</h3>
+    <div>🌀 <strong>Motif</strong></div>
+    <div>🎶 <strong>Musical Theme</strong></div>
+    <div>🧠 <strong>Symbolism</strong></div>
+    <div>📕 <strong>Main Story</strong></div>
+    <div>📘 <strong>Side Story</strong></div>
+  </div>
   <h1>The Gizzverse Timeline</h1>
 
   <div class="filters">
