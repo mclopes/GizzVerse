@@ -6,7 +6,10 @@
     "song": "Crumbling Castle",
     "contribution": "Full story album",
     "type": "Main Story",
-    "description": "An ancient land of geometry and prophecy begins to fall, setting off the metaphysical timeline of the Gizzverse."
+    "description": "An ancient land of geometry and prophecy begins to fall, setting off the metaphysical timeline of the Gizzverse.",
+    "motif": "Castles crumbling, geometric landscapes",
+    "musical_theme": "Descending modal melodies evoking decay",
+    "symbolism": "The fall of civilizations and loss of enlightenment"
   },
   {
     "album": "Polygondwanaland",
@@ -24,7 +27,10 @@
     "song": "I'm In Your Mind",
     "contribution": "Partial story (tracks 1\u20134)",
     "type": "Main Story",
-    "description": "Mental loops and illusions emerge, laying the groundwork for the looping madness of Nonagon Infinity."
+    "description": "Mental loops and illusions emerge, laying the groundwork for the looping madness of Nonagon Infinity.",
+    "motif": "Tunnels, brains, surreal color palettes",
+    "musical_theme": "Repeating riff themes, mind-loop transitions",
+    "symbolism": "Manipulation of consciousness and reality"
   },
   {
     "album": "Nonagon Infinity",
@@ -33,7 +39,10 @@
     "song": "Robot Stop",
     "contribution": "Full story album",
     "type": "Main Story",
-    "description": "The Nonagon acts as a cursed portal that loops eternally, binding time and space into madness."
+    "description": "The Nonagon acts as a cursed portal that loops eternally, binding time and space into madness.",
+    "motif": "Infinity symbols, portals, machinery",
+    "musical_theme": "Songs loop into one another seamlessly",
+    "symbolism": "Time as a trap, inescapable repetition"
   },
   {
     "album": "Nonagon Infinity",
@@ -42,7 +51,10 @@
     "song": "Evil Death Roll",
     "contribution": "Full story album",
     "type": "Main Story",
-    "description": "A destructive force born of the Nonagon wreaks havoc, crossing over into other dimensions."
+    "description": "A destructive force born of the Nonagon wreaks havoc, crossing over into other dimensions.",
+    "motif": "Infinity symbols, portals, machinery",
+    "musical_theme": "Songs loop into one another seamlessly",
+    "symbolism": "Time as a trap, inescapable repetition"
   },
   {
     "album": "Murder of the Universe",
@@ -51,7 +63,10 @@
     "song": "Lord of Lightning",
     "contribution": "Full rock opera (3 acts)",
     "type": "Main Story",
-    "description": "A cosmic entity tries to suppress the Balrog but leaves destruction in its wake."
+    "description": "A cosmic entity tries to suppress the Balrog but leaves destruction in its wake.",
+    "motif": "Lightning bolts, cosmic duels",
+    "musical_theme": "Heavy psychedelic guitar and thematic reprises",
+    "symbolism": "The chaotic force of nature meeting corruption"
   },
   {
     "album": "Murder of the Universe",
@@ -69,7 +84,10 @@
     "song": "Han-Tyumi & the Murder of the Universe",
     "contribution": "Full rock opera (3 acts)",
     "type": "Main Story",
-    "description": "A sentient AI wants to vomit and die \u2014 he builds a Soy-Protein Munt Machine and ends all known existence."
+    "description": "A sentient AI wants to vomit and die \u2014 he builds a Soy-Protein Munt Machine and ends all known existence.",
+    "motif": "Wires, decay, green vomit",
+    "musical_theme": "Narration with synth swells, robotic stutter",
+    "symbolism": "Techno-narcissism and the existential limits of AI"
   },
   {
     "album": "Sketches of Brunswick East",
@@ -87,7 +105,10 @@
     "song": "Planet B",
     "contribution": "Full story album",
     "type": "Main Story",
-    "description": "Ecological destruction has left Earth nearly uninhabitable. The elite prepare to flee the planet."
+    "description": "Ecological destruction has left Earth nearly uninhabitable. The elite prepare to flee the planet.",
+    "motif": "Industrial wastelands, radiation symbols",
+    "musical_theme": "Thrash metal motifs with repeated doomsday patterns",
+    "symbolism": "Ecological collapse and elitist exodus"
   },
   {
     "album": "Infest the Rats' Nest",
@@ -96,7 +117,10 @@
     "song": "Mars for the Rich",
     "contribution": "Full story album",
     "type": "Main Story",
-    "description": "The rich escape to Mars while the poor suffer \u2014 paralleling the techno divide of the post-Han-Tyumi universe."
+    "description": "The rich escape to Mars while the poor suffer \u2014 paralleling the techno divide of the post-Han-Tyumi universe.",
+    "motif": "Industrial wastelands, radiation symbols",
+    "musical_theme": "Thrash metal motifs with repeated doomsday patterns",
+    "symbolism": "Ecological collapse and elitist exodus"
   },
   {
     "album": "The Silver Cord",
@@ -105,7 +129,10 @@
     "song": "Theia",
     "contribution": "Full story album",
     "type": "Main Story",
-    "description": "As biology becomes obsolete, minds are uploaded into a utopian digital continuum."
+    "description": "As biology becomes obsolete, minds are uploaded into a utopian digital continuum.",
+    "motif": "Virtual spaces, chrome architecture",
+    "musical_theme": "Digital arpeggios, synth-drenched ambiance",
+    "symbolism": "Humanity's transcendence or erasure through tech"
   },
   {
     "album": "The Silver Cord",
@@ -114,7 +141,10 @@
     "song": "Extinction",
     "contribution": "Full story album",
     "type": "Main Story",
-    "description": "Human life as we know it ends. Data and consciousness persist in an eternal loop."
+    "description": "Human life as we know it ends. Data and consciousness persist in an eternal loop.",
+    "motif": "Virtual spaces, chrome architecture",
+    "musical_theme": "Digital arpeggios, synth-drenched ambiance",
+    "symbolism": "Humanity's transcendence or erasure through tech"
   },
   {
     "album": "Flight b741",
@@ -177,7 +207,10 @@
     "song": "Han-Tyumi & The Murder of the Universe",
     "contribution": "Character origin and universe-ending act",
     "type": "Main Story",
-    "description": "Han-Tyumi, a cyborg who longs for human experiences like vomiting and death, creates the Soy-Protein Munt Machine. Their fusion triggers uncontrollable vomiting and the end of the universe."
+    "description": "Han-Tyumi, a cyborg who longs for human experiences like vomiting and death, creates the Soy-Protein Munt Machine. Their fusion triggers uncontrollable vomiting and the end of the universe.",
+    "motif": "Wires, decay, green vomit",
+    "musical_theme": "Narration with synth swells, robotic stutter",
+    "symbolism": "Techno-narcissism and the existential limits of AI"
   },
   {
     "album": "Murder of the Universe",
@@ -186,7 +219,10 @@
     "song": "The Lord of Lightning vs. Balrog",
     "contribution": "Elemental conflict",
     "type": "Main Story",
-    "description": "The Lord of Lightning accidentally brings Balrog to life. Their battle unleashes destructive energy through multiple dimensions."
+    "description": "The Lord of Lightning accidentally brings Balrog to life. Their battle unleashes destructive energy through multiple dimensions.",
+    "motif": "Lightning bolts, cosmic duels",
+    "musical_theme": "Heavy psychedelic guitar and thematic reprises",
+    "symbolism": "The chaotic force of nature meeting corruption"
   },
   {
     "album": "Murder of the Universe",
@@ -204,7 +240,10 @@
     "song": "Big Fig Wasp",
     "contribution": "Visual side lore (music video)",
     "type": "Side Story",
-    "description": "In the music video, Wasp Man represents the chaos within, battling The People Vulture as a metaphor for identity and perception."
+    "description": "In the music video, Wasp Man represents the chaos within, battling The People Vulture as a metaphor for identity and perception.",
+    "motif": "Infinity symbols, portals, machinery",
+    "musical_theme": "Songs loop into one another seamlessly",
+    "symbolism": "Time as a trap, inescapable repetition"
   },
   {
     "album": "Nonagon Infinity",
@@ -213,7 +252,10 @@
     "song": "Invisible Face",
     "contribution": "Thematic warrior",
     "type": "Side Story",
-    "description": "Invisible Face Man symbolizes internal conflict \u2014 both seen and unseen \u2014 during the battle with The People Vulture."
+    "description": "Invisible Face Man symbolizes internal conflict \u2014 both seen and unseen \u2014 during the battle with The People Vulture.",
+    "motif": "Infinity symbols, portals, machinery",
+    "musical_theme": "Songs loop into one another seamlessly",
+    "symbolism": "Time as a trap, inescapable repetition"
   },
   {
     "album": "Nonagon Infinity",
@@ -222,7 +264,10 @@
     "song": "Robot Stop",
     "contribution": "Combatant in visual lore",
     "type": "Side Story",
-    "description": "Robot Man fights against forces beyond control, embodying mechanical determinism in the face of infinite chaos."
+    "description": "Robot Man fights against forces beyond control, embodying mechanical determinism in the face of infinite chaos.",
+    "motif": "Infinity symbols, portals, machinery",
+    "musical_theme": "Songs loop into one another seamlessly",
+    "symbolism": "Time as a trap, inescapable repetition"
   },
   {
     "album": "Murder of the Universe",
@@ -231,7 +276,10 @@
     "song": "The Lord of Lightning",
     "contribution": "Victim of elemental conflict",
     "type": "Side Story",
-    "description": "The Prey represents mortality and vulnerability as they are pursued and destroyed by the uncontrollable wrath of The Lord of Lightning."
+    "description": "The Prey represents mortality and vulnerability as they are pursued and destroyed by the uncontrollable wrath of The Lord of Lightning.",
+    "motif": "Lightning bolts, cosmic duels",
+    "musical_theme": "Heavy psychedelic guitar and thematic reprises",
+    "symbolism": "The chaotic force of nature meeting corruption"
   },
   {
     "album": "Polygondwanaland",
@@ -240,6 +288,9 @@
     "song": "Crumbling Castle",
     "contribution": "Geographic worldbuilding",
     "type": "Main Story",
-    "description": "Explorers discover the geometrically unstable world of Polygondwanaland, expanding the map of the Gizzverse and its metaphysical laws."
+    "description": "Explorers discover the geometrically unstable world of Polygondwanaland, expanding the map of the Gizzverse and its metaphysical laws.",
+    "motif": "Castles crumbling, geometric landscapes",
+    "musical_theme": "Descending modal melodies evoking decay",
+    "symbolism": "The fall of civilizations and loss of enlightenment"
   }
 ]
