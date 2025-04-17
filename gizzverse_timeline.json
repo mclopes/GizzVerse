@@ -1,0 +1,76 @@
+# Recreate the JSON file again with image and music embed placeholders for each entry
+gizzverse_data_embeds = [
+    {
+        "album": "Polygondwanaland",
+        "year": 2017,
+        "event": "Ancient civilization rises",
+        "song": "Crumbling Castle",
+        "contribution": "Full story album",
+        "type": "Main Story",
+        "description": "An ancient kingdom begins to crumble, symbolizing the decline of an old order and the emergence of metaphysical exploration.",
+        "image": "images/polygondwanaland.jpg",
+        "spotify": "https://open.spotify.com/track/4nZuvL1ZnFBRgyWInxDQzI"
+    },
+    {
+        "album": "Polygondwanaland",
+        "year": 2017,
+        "event": "Humans evolve higher senses",
+        "song": "Tetrachromacy",
+        "contribution": "Full story album",
+        "type": "Main Story",
+        "description": "Explores the idea of humans developing new ways of perceiving reality — a precursor to the digital evolution in later albums.",
+        "image": "images/polygondwanaland.jpg",
+        "spotify": "https://open.spotify.com/track/3e3JceIkvwChN2rXnVZKg2"
+    },
+    {
+        "album": "I'm In Your Mind Fuzz",
+        "year": 2014,
+        "event": "Mind control & mental loop begins",
+        "song": "I'm In Your Mind Fuzz",
+        "contribution": "Partial story (tracks 1–4)",
+        "type": "Main Story",
+        "description": "Introduces the concept of being trapped within the mind — control, illusion, and mental imprisonment.",
+        "image": "images/mind_fuzz.jpg",
+        "spotify": "https://open.spotify.com/track/1B2oAOy9FRK2ieyk9EoyRf"
+    },
+    {
+        "album": "Nonagon Infinity",
+        "year": 2016,
+        "event": "Nonagon opens, chaos unleashed",
+        "song": "Robot Stop",
+        "contribution": "Full story album (looping chaos)",
+        "type": "Main Story",
+        "description": "An infinite loop is triggered; the gateway to chaos is opened, unleashing multidimensional instability.",
+        "image": "images/nonagon_infinity.jpg",
+        "spotify": "https://open.spotify.com/track/1Qyo5PZugZ2VLHEsEjDD2X"
+    },
+    {
+        "album": "Flight b741",
+        "year": 2024,
+        "event": "Pilot flees society, faces existential crisis mid-flight",
+        "song": "Flight b741",
+        "contribution": "Loose concept album (multiple songs)",
+        "type": "Main Story",
+        "description": "A lone pilot attempts to escape from society. As the plane descends, memory, emotion, and fate collide.",
+        "image": "images/flight_b741.jpg",
+        "spotify": "https://open.spotify.com/track/1bQnd7G8Xvh4WQUZDn6D5K"
+    },
+    {
+        "album": "Phantom Island",
+        "year": 2024,
+        "event": "Passengers encounter mythic illusions; descent into madness",
+        "song": "Phantom Island",
+        "contribution": "Side story (psychological aftermath)",
+        "type": "Side Story",
+        "description": "Flight b741 passengers arrive at a mysterious island. They begin to lose their grip on reality amid hallucinations.",
+        "image": "images/phantom_island.jpg",
+        "spotify": "https://open.spotify.com/track/3HdFPgW7ZYP5yVcspxAStT"
+    }
+]
+
+# Save to JSON file with embeds
+json_embeds_path = "/mnt/data/gizzverse_timeline_embeds.json"
+with open(json_embeds_path, "w") as f:
+    json.dump(gizzverse_data_embeds, f, indent=2)
+
+json_embeds_path
