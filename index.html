@@ -50,32 +50,52 @@
 
   <script>
     const wikiCovers = {
-  "Polygondwanaland": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Polygondwanaland.jpg/250px-Polygondwanaland.jpg",
-  "I'm In Your Mind Fuzz": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/I%27m_in_Your_Mind_Fuzz_King_Gizzard.jpg/250px-I%27m_in_Your_Mind_Fuzz_King_Gizzard.jpg",
-  "Nonagon Infinity": "https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Nonagon_Infinity.png/250px-Nonagon_Infinity.png",
-  "Murder of the Universe": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Murder_of_the_Universe.png/250px-Murder_of_the_Universe.png",
-  "Sketches of Brunswick East": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/King_Gizzard_%26_the_Lizard_Wizard_-_Sketches_of_Brunswick_East_%282017%29_cover_art.jpg/250px-King_Gizzard_%26_the_Lizard_Wizard_-_Sketches_of_Brunswick_East_%282017%29_cover_art.jpg",
-  "Infest the Rats' Nest": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/King_Gizzard_%26_the_Lizard_Wizard_-_Infest_the_Rats%27_Nest.png/250px-King_Gizzard_%26_the_Lizard_Wizard_-_Infest_the_Rats%27_Nest.png",
-  "The Silver Cord": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/The_Silver_Chord.webp/250px-The_Silver_Chord.webp.png",
-  "Flight b741": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/FlightB741.jpg/250px-FlightB741.jpg",
-  "Phantom Island": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Phantom_Island_Album_Cover.png/250px-Phantom_Island_Album_Cover.png"
+      "Polygondwanaland": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Polygondwanaland.jpg/250px-Polygondwanaland.jpg",
+      "I'm In Your Mind Fuzz": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/I%27m_in_Your_Mind_Fuzz_King_Gizzard.jpg/250px-I%27m_in_Your_Mind_Fuzz_King_Gizzard.jpg",
+      "Nonagon Infinity": "https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Nonagon_Infinity.png/250px-Nonagon_Infinity.png",
+      "Murder of the Universe": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Murder_of_the_Universe.png/250px-Murder_of_the_Universe.png",
+      "Sketches of Brunswick East": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/King_Gizzard_%26_the_Lizard_Wizard_-_Sketches_of_Brunswick_East_%282017%29_cover_art.jpg/250px-King_Gizzard_%26_the_Lizard_Wizard_-_Sketches_of_Brunswick_East_%282017%29_cover_art.jpg",
+      "Infest the Rats' Nest": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/King_Gizzard_%26_the_Lizard_Wizard_-_Infest_the_Rats%27_Nest.png/250px-King_Gizzard_%26_the_Lizard_Wizard_-_Infest_the_Rats%27_Nest.png",
+      "The Silver Cord": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/The_Silver_Chord.webp/250px-The_Silver_Chord.webp.png",
+      "Flight b741": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/FlightB741.jpg/250px-FlightB741.jpg",
+      "Phantom Island": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Phantom_Island_Album_Cover.png/250px-Phantom_Island_Album_Cover.png"
+    };
+
+    const spotifyURIs = {
+  "Crumbling Castle": "spotify:track:4T1168WOWj7Ch7DbbNEFp7",
+  "I'm In Your Mind": "spotify:track:6nfrWY3igirVpID6QaLKRV",
+  "Robot Stop": "spotify:track:4bbZcD92nLvQnbrblZTS1K",
+  "Han-Tyumi & The Murder of the Universe": "spotify:track:37b1wjsYniMzOQMEYgWhm6",
+  "Mars for the Rich": "spotify:track:4lV1tx0EdlIChOw7Kz7fP0",
+  "The Silver Cord": "spotify:track:5t7KSW59Wn1bMC2ZjDuySN",
+  "Evil Death Roll": "spotify:track:3YbAxRAUWhRu8QbDKWkIEQ",
+  "Lord of Lightning": "spotify:track:5l8CboqMbDmoQpAs3YZgAN",
+  "Altered Beast I": "spotify:track:7aFgtNbdS4eB2hRzI03eYx",
+  "Tetrachromacy": "spotify:track:6eA9rJq9oJHkuLPxUqWlg7",
+  "Theia": "spotify:track:0V5Pfgh7RMFeQtFMhZ8X6l",
+  "Extinction": "spotify:track:6ZAWKp1aKTwOfRGcITjAqt",
+  "Big Fig Wasp": "spotify:track:3yvpq5rXZxThblqjHkxXJt",
+  "Invisible Face": "spotify:track:2S5yIMCNpKpU2yo5wCEn7f",
+  "Altered Beast IV": "spotify:track:1nOsl7HRmjghwA1grH2YiL",
+  "The Lord of Lightning vs. Balrog": "spotify:track:3hxuecc9LrONL0wNvoo5tR",
+  "Planet B": "spotify:track:4bFZ1A3rsCKsNUo14utU42"
 };
 
     let allEvents = [];
     let currentFilter = 'All';
 
     const chapters = [
-  { label: "Ancient & Mythical Origins", match: ["Polygondwanaland"] },
-  { label: "Mind Loops & Illusions", match: ["I'm In Your Mind Fuzz"] },
-  { label: "The Nonagon Era", match: ["Nonagon Infinity", "Murder of the Universe"] },
-  { label: "Temporal Anomalies", match: ["Made in Timeland", "Laminated Denim"] },
-  { label: "Alternate Realities", match: ["Sketches of Brunswick East"] },
-  { label: "Collapse of Earth", match: ["Infest the Rats' Nest"] },
-  { label: "Elemental Destruction", match: ["PetroDragonic Apocalypse"] },
-  { label: "Resets & Rituals", match: ["Omnium Gatherum"] },
-  { label: "Digital Afterlife", match: ["The Silver Cord"] },
-  { label: "Flight & Descent", match: ["Flight b741", "Phantom Island"] }
-];
+      { label: "Ancient & Mythical Origins", match: ["Polygondwanaland"] },
+      { label: "Mind Loops & Illusions", match: ["I'm In Your Mind Fuzz"] },
+      { label: "The Nonagon Era", match: ["Nonagon Infinity", "Murder of the Universe"] },
+      { label: "Temporal Anomalies", match: ["Made in Timeland", "Laminated Denim"] },
+      { label: "Alternate Realities", match: ["Sketches of Brunswick East"] },
+      { label: "Collapse of Earth", match: ["Infest the Rats' Nest"] },
+      { label: "Elemental Destruction", match: ["PetroDragonic Apocalypse"] },
+      { label: "Resets & Rituals", match: ["Omnium Gatherum"] },
+      { label: "Digital Afterlife", match: ["The Silver Cord"] },
+      { label: "Flight & Descent", match: ["Flight b741", "Phantom Island"] }
+    ];
 
     function renderTimeline(data) {
       const timeline = document.getElementById('timeline');
@@ -87,17 +107,16 @@
           const chapterHeader = document.createElement('div');
           chapterHeader.className = 'chapter';
           chapterHeader.textContent = chapter.label;
-          // 🧭 Add deep linking support
-const slugify = str => str.toLowerCase().replace(/[^\w]+/g, '-');
-chapterHeader.id = slugify(chapter.label);
+          const slugify = str => str.toLowerCase().replace(/[^\w]+/g, '-');
+          chapterHeader.id = slugify(chapter.label);
 
-if (window.location.hash.slice(1) === chapterHeader.id) {
-  setTimeout(() => {
-    chapterHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 100);
-}
+          if (window.location.hash.slice(1) === chapterHeader.id) {
+            setTimeout(() => {
+              chapterHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+          }
 
-timeline.appendChild(chapterHeader);
+          timeline.appendChild(chapterHeader);
 
           chapterEvents.forEach(event => {
             const div = document.createElement('div');
@@ -105,6 +124,10 @@ timeline.appendChild(chapterHeader);
 
             const albumCover = wikiCovers[event.album] || '';
             const albumImageHTML = albumCover ? `<img src="${albumCover}" alt="${event.album} Cover" class="album-art">` : '';
+            const spotifyURI = spotifyURIs[event.song];
+            const spotifyEmbed = spotifyURI ?
+              `<iframe src="https://open.spotify.com/embed/track/${spotifyURI.split(':').pop()}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>` :
+              `<p><a href="https://open.spotify.com/search/${encodeURIComponent(event.song + ' ' + event.album)}" target="_blank" style="color:#1DB954;font-weight:bold;">🎧 Search on Spotify</a></p>`;
 
             div.innerHTML = `
               <h2>${event.event}</h2>
@@ -116,11 +139,10 @@ timeline.appendChild(chapterHeader);
               </div>
               <p>${event.description}</p>
               ${albumImageHTML}
-              ${event.spotify_uri ? `<iframe src="https://open.spotify.com/embed/track/${event.spotify_uri.split(':').pop()}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>` : `<p><a href="https://open.spotify.com/search/${encodeURIComponent(event.song + ' ' + event.album)}" target="_blank" style="color:#1DB954;font-weight:bold;">🎧 Search on Spotify</a></p>`}
-            
-          ${event.motif ? `<p><strong>🌀 Motif:</strong> ${event.motif}</p>` : ''}
-          ${event.musical_theme ? `<p><strong>🎶 Musical Theme:</strong> ${event.musical_theme}</p>` : ''}
-          ${event.symbolism ? `<p><strong>🧠 Symbolism:</strong> ${event.symbolism}</p>` : ''}`;
+              ${spotifyEmbed}
+              ${event.motif ? `<p><strong>🌀 Motif:</strong> ${event.motif}</p>` : ''}
+              ${event.musical_theme ? `<p><strong>🎶 Musical Theme:</strong> ${event.musical_theme}</p>` : ''}
+              ${event.symbolism ? `<p><strong>🧠 Symbolism:</strong> ${event.symbolism}</p>` : ''}`;
             timeline.appendChild(div);
           });
         }
