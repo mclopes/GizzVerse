@@ -110,16 +110,16 @@
 
   <script>
     const wikiCovers = {
-      "Polygondwanaland": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Polygondwanaland.jpg/250px-Polygondwanaland.jpg",
-       "I'm In Your Mind Fuzz": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/I%27m_in_Your_Mind_Fuzz_King_Gizzard.jpg/250px-I%27m_in_Your_Mind_Fuzz_King_Gizzard.jpg",
-       "Nonagon Infinity": "https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Nonagon_Infinity.png/250px-Nonagon_Infinity.png",
-       "Murder of the Universe": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Murder_of_the_Universe.png/250px-Murder_of_the_Universe.png",
-       "Sketches of Brunswick East": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/King_Gizzard_%26_the_Lizard_Wizard_-_Sketches_of_Brunswick_East_%282017%29_cover_art.jpg/250px-King_Gizzard_%26_the_Lizard_Wizard_-_Sketches_of_Brunswick_East_%282017%29_cover_art.jpg",
-       "Infest the Rats' Nest": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/King_Gizzard_%26_the_Lizard_Wizard_-_Infest_the_Rats%27_Nest.png/250px-King_Gizzard_%26_the_Lizard_Wizard_-_Infest_the_Rats%27_Nest.png",
-       "The Silver Cord": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/The_Silver_Chord.webp/250px-The_Silver_Chord.webp.png",
-       "Flight b741": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/FlightB741.jpg/250px-FlightB741.jpg",
-       "Phantom Island": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Phantom_Island_Album_Cover.png/250px-Phantom_Island_Album_Cover.png"
-    };
+  "Polygondwanaland": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Polygondwanaland.jpg/250px-Polygondwanaland.jpg",
+  "I'm In Your Mind Fuzz": "https://upload.wikimedia.org/wikipedia/en/thumb/2/20/I%27m_in_Your_Mind_Fuzz_King_Gizzard.jpg/250px-I%27m_in_Your_Mind_Fuzz_King_Gizzard.jpg",
+  "Nonagon Infinity": "https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Nonagon_Infinity.png/250px-Nonagon_Infinity.png",
+  "Murder of the Universe": "https://upload.wikimedia.org/wikipedia/en/thumb/b/be/Murder_of_the_Universe.png/250px-Murder_of_the_Universe.png",
+  "Sketches of Brunswick East": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3f/King_Gizzard_%26_the_Lizard_Wizard_-_Sketches_of_Brunswick_East_%282017%29_cover_art.jpg/250px-King_Gizzard_%26_the_Lizard_Wizard_-_Sketches_of_Brunswick_East_%282017%29_cover_art.jpg",
+  "Infest the Rats' Nest": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2e/King_Gizzard_%26_the_Lizard_Wizard_-_Infest_the_Rats%27_Nest.png/250px-King_Gizzard_%26_the_Lizard_Wizard_-_Infest_the_Rats%27_Nest.png",
+  "The Silver Cord": "https://upload.wikimedia.org/wikipedia/en/thumb/2/26/The_Silver_Chord.webp/250px-The_Silver_Chord.webp.png",
+  "Flight b741": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/FlightB741.jpg/250px-FlightB741.jpg",
+  "Phantom Island": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0e/Phantom_Island_Album_Cover.png/250px-Phantom_Island_Album_Cover.png"
+};
 
     let allEvents = [];
     let currentFilter = 'All';
@@ -164,7 +164,10 @@
               <p>${event.description}</p>
               ${albumImageHTML}
               <iframe src="https://open.spotify.com/embed/search/${encodeURIComponent(event.song + ' ' + event.album)}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-            `;
+            
+          ${event.motif ? `<p><strong>🌀 Motif:</strong> ${event.motif}</p>` : ''}
+          ${event.musical_theme ? `<p><strong>🎶 Musical Theme:</strong> ${event.musical_theme}</p>` : ''}
+          ${event.symbolism ? `<p><strong>🧠 Symbolism:</strong> ${event.symbolism}</p>` : ''}`;
             timeline.appendChild(div);
           });
         }
