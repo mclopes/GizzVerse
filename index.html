@@ -87,7 +87,7 @@
       "Phantom Island": "https://upload.wikimedia.org/wikipedia/en/e/e3/Phantom_Island_album_cover.jpg"
     };
 
-    fetch('gizzverse_timeline.json')
+    fetch('https://mclopes.github.io/GizzVerse/gizzverse_timeline.json')
       .then(response => response.json())
       .then(data => {
         const timeline = document.getElementById('timeline');
