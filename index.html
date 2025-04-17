@@ -4,93 +4,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gizzverse Timeline</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Courier New', Courier, monospace;
-      background: linear-gradient(to bottom, #0f0f0f, #1e1e1e);
-      color: #f0f0f0;
-    }
-    h1 {
-      text-align: center;
-      font-size: 2em;
-      color: #ff3c00;
-      margin-top: 20px;
-    }
-    .filters {
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    .filters button {
-      background: #ff3c00;
-      color: white;
-      border: none;
-      padding: 0.5rem 1rem;
-      margin: 0.25rem;
-      border-radius: 8px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-    .filters button.active {
-      background: #ff9500;
-    }
-    .timeline {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem;
-    }
-    .chapter {
-      width: 100%;
-      max-width: 600px;
-      font-size: 1.2em;
-      font-weight: bold;
-      margin: 2rem 0 1rem;
-      padding-bottom: 0.25rem;
-      border-bottom: 2px solid #ff3c00;
-      color: #ff3c00;
-    }
-    .event {
-      background: rgba(255, 60, 0, 0.1);
-      border: 1px solid #ff3c00;
-      border-radius: 12px;
-      margin: 1rem;
-      padding: 1rem;
-      width: 90%;
-      max-width: 600px;
-      transition: transform 0.2s ease-in-out;
-    }
-    .event:hover {
-      transform: scale(1.02);
-      background: rgba(255, 60, 0, 0.2);
-    }
-    .event h2 {
-      font-size: 1.25em;
-      color: #ff9500;
-    }
-    .event .meta {
-      font-size: 0.9em;
-      color: #aaa;
-    }
-    .event p {
-      font-size: 1em;
-      color: #e0e0e0;
-    }
-    iframe {
-      margin-top: 10px;
-      width: 100%;
-      height: 80px;
-      border: none;
-      border-radius: 8px;
-    }
-    .album-art {
-      margin-top: 10px;
-      width: 100%;
-      max-height: 200px;
-      object-fit: contain;
-      border-radius: 8px;
-    }
-    .nonagon-bg {
+  <style>$1  .chapter {
+    width: 100%;
+    max-width: 600px;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 3rem 0 1.5rem;
+    padding: 1rem;
+    border: 2px dashed #ff3c00;
+    background: rgba(255, 60, 0, 0.05);
+    border-radius: 12px;
+    color: #ff9500;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px rgba(255, 60, 0, 0.2);
+  }
+  .lyrics-toggle {
+    background: #111;
+    color: #ff9500;
+    border: 1px solid #ff3c00;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .lyrics {
+    white-space: pre-wrap;
+    background: rgba(255,255,255,0.05);
+    border-left: 3px solid #ff9500;
+    padding: 0.75rem;
+    font-family: monospace;
+    margin-top: 0.5rem;
+    display: none;
+    color: #ccc;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at top, #000000 0%, #111111 100%);
+    color: #ddd;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .timeline {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .event {
+    background: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 10px rgba(255, 60, 0, 0.2);
+    border: 1px solid #333;
+    text-align: left;
+  }
+
+  .album-art {
+    max-width: 200px;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);
+  }
+
+  .legend {
+    position: fixed;
+    right: 1rem;
+    top: 5rem;
+    background: #1e1e1e;
+    border: 1px solid #ff3c00;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    max-width: 200px;
+    z-index: 10;
+  }
+
+  .legend h3 {
+    margin-top: 0;
+    color: #ff9500;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .legend div {
+    margin-bottom: 0.25rem;
+  }
+
+  .filters {
+    margin-bottom: 2rem;
+  }
+
+  .filters button {
+    background: #222;
+    color: #ff9500;
+    border: 1px solid #ff3c00;
+    padding: 0.5rem 1rem;
+    margin: 0 0.25rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+
+  .filters button.active {
+    background: #ff3c00;
+    color: white;
+  }
+
+  .nonagon-bg {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -113,28 +139,6 @@
   @keyframes spin {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
-  }
-
-  .legend {
-    position: fixed;
-    right: 1rem;
-    top: 5rem;
-    background: #1e1e1e;
-    border: 1px solid #ff3c00;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    max-width: 200px;
-    z-index: 10;
-  }
-  .legend h3 {
-    margin-top: 0;
-    color: #ff9500;
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-  }
-  .legend div {
-    margin-bottom: 0.25rem;
   }
 </style>
 </head>
@@ -185,20 +189,17 @@
   "Mars for the Rich": "spotify:track:4lV1tx0EdlIChOw7Kz7fP0",
   "The Silver Cord": "spotify:track:5t7KSW59Wn1bMC2ZjDuySN",
   "Evil Death Roll": "spotify:track:3YbAxRAUWhRu8QbDKWkIEQ",
-  "Lord of Lightning": "spotify:track:5l8CboqMbDmoQpAs3YZgAN",
-  "Altered Beast I": "spotify:track:7aFgtNbdS4eB2hRzI03eYx",
+  "Lord of Lightning": "spotify:track:5pSGph2miyfIFPUTInd8cB",
+  "Altered Beast I": "spotify:track:59YYbXYQJ4tAVoMNMgYO0J",
+  "Altered Beast II": "spotify:track:7JaPaEAL7th9C5mWe6d1WY",
+  "Altered Beast III": "spotify:track:7fFibZEe8y9GKv8rnCJWGj",
+  "Altered Beast IV": "spotify:track:4E7krBBYU7mHL4emdEA7eE",
   "Tetrachromacy": "spotify:track:6eA9rJq9oJHkuLPxUqWlg7",
   "Theia": "spotify:track:0V5Pfgh7RMFeQtFMhZ8X6l",
   "Extinction": "spotify:track:6ZAWKp1aKTwOfRGcITjAqt",
   "Big Fig Wasp": "spotify:track:3yvpq5rXZxThblqjHkxXJt",
   "Invisible Face": "spotify:track:2S5yIMCNpKpU2yo5wCEn7f",
-  "Altered Beast IV": "spotify:track:1nOsl7HRmjghwA1grH2YiL",
-  "The Lord of Lightning vs. Balrog": "spotify:track:3hxuecc9LrONL0wNvoo5tR",
-  "Planet B": "spotify:track:4bFZ1A3rsCKsNUo14utU42"
-  "Altered Beast I": "spotify:track:59YYbXYQJ4tAVoMNMgYO0J",
-  "Altered Beast II": "spotify:track:7JaPaEAL7th9C5mWe6d1WY",
-  "Altered Beast III": "spotify:track:7fFibZEe8y9GKv8rnCJWGj",
-  "Altered Beast IV": "spotify:track:4E7krBBYU7mHL4emdEA7eE"
+  "Planet B": "spotify:track:4bFZ1A3rsCKsNUo14utU42",
   "The Lord of Lightning": "spotify:track:5pSGph2miyfIFPUTInd8cB"
 };
 
@@ -263,7 +264,8 @@
               ${spotifyEmbed}
               ${event.motif ? `<p><strong>🌀 Motif:</strong> ${event.motif}</p>` : ''}
               ${event.musical_theme ? `<p><strong>🎶 Musical Theme:</strong> ${event.musical_theme}</p>` : ''}
-              ${event.symbolism ? `<p><strong>🧠 Symbolism:</strong> ${event.symbolism}</p>` : ''}`;
+              ${event.symbolism ? `<p><strong>🧠 Symbolism:</strong> ${event.symbolism}</p>` : ''}
+              ${event.lyrics ? `<button class='lyrics-toggle' onclick='this.nextElementSibling.style.display = this.nextElementSibling.style.display === "block" ? "none" : "block"'>📜 Show Lyrics</button><div class='lyrics'>${event.lyrics}</div>` : ''}`;
             timeline.appendChild(div);
           });
         }
