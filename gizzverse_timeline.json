@@ -1,69 +1,173 @@
 [
-    {
-        "album": "Polygondwanaland",
-        "year": 2017,
-        "event": "Ancient civilization rises",
-        "song": "Crumbling Castle",
-        "contribution": "Full story album",
-        "type": "Main Story",
-        "description": "An ancient kingdom begins to crumble, symbolizing the decline of an old order and the emergence of metaphysical exploration.",
-        "image": "images/polygondwanaland.jpg",
-        "spotify": "https://open.spotify.com/track/4nZuvL1ZnFBRgyWInxDQzI"
-    },
-    {
-        "album": "Polygondwanaland",
-        "year": 2017,
-        "event": "Humans evolve higher senses",
-        "song": "Tetrachromacy",
-        "contribution": "Full story album",
-        "type": "Main Story",
-        "description": "Explores the idea of humans developing new ways of perceiving reality — a precursor to the digital evolution in later albums.",
-        "image": "images/polygondwanaland.jpg",
-        "spotify": "https://open.spotify.com/track/3e3JceIkvwChN2rXnVZKg2"
-    },
-    {
-        "album": "I'm In Your Mind Fuzz",
-        "year": 2014,
-        "event": "Mind control & mental loop begins",
-        "song": "I'm In Your Mind Fuzz",
-        "contribution": "Partial story (tracks 1–4)",
-        "type": "Main Story",
-        "description": "Introduces the concept of being trapped within the mind — control, illusion, and mental imprisonment.",
-        "image": "images/mind_fuzz.jpg",
-        "spotify": "https://open.spotify.com/track/1B2oAOy9FRK2ieyk9EoyRf"
-    },
-    {
-        "album": "Nonagon Infinity",
-        "year": 2016,
-        "event": "Nonagon opens, chaos unleashed",
-        "song": "Robot Stop",
-        "contribution": "Full story album (looping chaos)",
-        "type": "Main Story",
-        "description": "An infinite loop is triggered; the gateway to chaos is opened, unleashing multidimensional instability.",
-        "image": "images/nonagon_infinity.jpg",
-        "spotify": "https://open.spotify.com/track/1Qyo5PZugZ2VLHEsEjDD2X"
-    },
-    {
-        "album": "Flight b741",
-        "year": 2024,
-        "event": "Pilot flees society, faces existential crisis mid-flight",
-        "song": "Flight b741",
-        "contribution": "Loose concept album (multiple songs)",
-        "type": "Main Story",
-        "description": "A lone pilot attempts to escape from society. As the plane descends, memory, emotion, and fate collide.",
-        "image": "images/flight_b741.jpg",
-        "spotify": "https://open.spotify.com/track/1bQnd7G8Xvh4WQUZDn6D5K"
-    },
-    {
-        "album": "Phantom Island",
-        "year": 2024,
-        "event": "Passengers encounter mythic illusions; descent into madness",
-        "song": "Phantom Island",
-        "contribution": "Side story (psychological aftermath)",
-        "type": "Side Story",
-        "description": "Flight b741 passengers arrive at a mysterious island. They begin to lose their grip on reality amid hallucinations.",
-        "image": "images/phantom_island.jpg",
-        "spotify": "https://open.spotify.com/track/3HdFPgW7ZYP5yVcspxAStT"
-    }
+  {
+    "album": "Polygondwanaland",
+    "year": 2017,
+    "event": "Ancient civilization rises",
+    "song": "Crumbling Castle",
+    "contribution": "Full story album",
+    "type": "Main Story",
+    "description": "An ancient land of geometry and prophecy begins to fall, setting off the metaphysical timeline of the Gizzverse."
+  },
+  {
+    "album": "Polygondwanaland",
+    "year": 2017,
+    "event": "Evolution of perception and lore",
+    "song": "Tetrachromacy",
+    "contribution": "Full story album",
+    "type": "Main Story",
+    "description": "Humans evolve the ability to see more than four colors \u2014 a symbol for enhanced spiritual and perceptual awareness."
+  },
+  {
+    "album": "I'm In Your Mind Fuzz",
+    "year": 2014,
+    "event": "Mind control and illusion begin",
+    "song": "I'm In Your Mind",
+    "contribution": "Partial story (tracks 1\u20134)",
+    "type": "Main Story",
+    "description": "Mental loops and illusions emerge, laying the groundwork for the looping madness of Nonagon Infinity."
+  },
+  {
+    "album": "Nonagon Infinity",
+    "year": 2016,
+    "event": "Nonagon opens, endless chaos unleashed",
+    "song": "Robot Stop",
+    "contribution": "Full story album",
+    "type": "Main Story",
+    "description": "The Nonagon acts as a cursed portal that loops eternally, binding time and space into madness."
+  },
+  {
+    "album": "Nonagon Infinity",
+    "year": 2016,
+    "event": "The Balrog is released",
+    "song": "Evil Death Roll",
+    "contribution": "Full story album",
+    "type": "Main Story",
+    "description": "A destructive force born of the Nonagon wreaks havoc, crossing over into other dimensions."
+  },
+  {
+    "album": "Murder of the Universe",
+    "year": 2017,
+    "event": "Lord of Lightning battles the Balrog",
+    "song": "Lord of Lightning",
+    "contribution": "Full rock opera (3 acts)",
+    "type": "Main Story",
+    "description": "A cosmic entity tries to suppress the Balrog but leaves destruction in its wake."
+  },
+  {
+    "album": "Murder of the Universe",
+    "year": 2017,
+    "event": "Altered Beast fuses with man",
+    "song": "Altered Beast I\u2013IV",
+    "contribution": "Full rock opera (3 acts)",
+    "type": "Main Story",
+    "description": "A human tries to merge with beast DNA and loses identity \u2014 a warning about unnatural evolution."
+  },
+  {
+    "album": "Murder of the Universe",
+    "year": 2017,
+    "event": "Han-Tyumi creates the Munt Machine",
+    "song": "Han-Tyumi & the Murder of the Universe",
+    "contribution": "Full rock opera (3 acts)",
+    "type": "Main Story",
+    "description": "A sentient AI wants to vomit and die \u2014 he builds a Soy-Protein Munt Machine and ends all known existence."
+  },
+  {
+    "album": "Sketches of Brunswick East",
+    "year": 2017,
+    "event": "Alternate universe: peaceful reality",
+    "song": "Countdown",
+    "contribution": "Side story",
+    "type": "Side Story",
+    "description": "A parallel Gizzverse timeline where harmony, jazz, and nature coexist \u2014 untouched by chaos."
+  },
+  {
+    "album": "Infest the Rats' Nest",
+    "year": 2019,
+    "event": "Earth collapses from climate catastrophe",
+    "song": "Planet B",
+    "contribution": "Full story album",
+    "type": "Main Story",
+    "description": "Ecological destruction has left Earth nearly uninhabitable. The elite prepare to flee the planet."
+  },
+  {
+    "album": "Infest the Rats' Nest",
+    "year": 2019,
+    "event": "Elites colonize Venus and Mars",
+    "song": "Mars for the Rich",
+    "contribution": "Full story album",
+    "type": "Main Story",
+    "description": "The rich escape to Mars while the poor suffer \u2014 paralleling the techno divide of the post-Han-Tyumi universe."
+  },
+  {
+    "album": "The Silver Cord",
+    "year": 2023,
+    "event": "Humanity uploads consciousness into a simulation",
+    "song": "Theia",
+    "contribution": "Full story album",
+    "type": "Main Story",
+    "description": "As biology becomes obsolete, minds are uploaded into a utopian digital continuum."
+  },
+  {
+    "album": "The Silver Cord",
+    "year": 2023,
+    "event": "Digital immortality begins; bodies extinct",
+    "song": "Extinction",
+    "contribution": "Full story album",
+    "type": "Main Story",
+    "description": "Human life as we know it ends. Data and consciousness persist in an eternal loop."
+  },
+  {
+    "album": "Flight b741",
+    "year": 2024,
+    "event": "Pilot flees society, descends into crisis mid-flight",
+    "song": "Flight b741",
+    "contribution": "Loose concept album",
+    "type": "Main Story",
+    "description": "A pilot experiences a personal and existential crisis while escaping a doomed Earth."
+  },
+  {
+    "album": "Phantom Island",
+    "year": 2024,
+    "event": "Passengers hallucinate mythic beings on mysterious island",
+    "song": "Phantom Island",
+    "contribution": "Side story",
+    "type": "Side Story",
+    "description": "The descent ends in a surreal realm where hallucination and reality merge in psychological horror."
+  },
+  {
+    "album": "PetroDragonic Apocalypse",
+    "year": 2023,
+    "event": "Earth annihilated in fire and acid",
+    "song": "Gila Monster",
+    "contribution": "Full story album",
+    "type": "Main Story",
+    "description": "Apocalyptic fire, elemental dragons, and revenge against a planet-consuming industrial age."
+  },
+  {
+    "album": "Omnium Gatherum",
+    "year": 2022,
+    "event": "Universal reset; ritual funeral closes a loop",
+    "song": "The Funeral",
+    "contribution": "Arc bridge album",
+    "type": "Main Story",
+    "description": "A ceremonial transition \u2014 closing one timeline to open another, symbolizing rebirth or relooping."
+  },
+  {
+    "album": "Made in Timeland",
+    "year": 2022,
+    "event": "Time fracturing begins in hidden loops",
+    "song": "Timeland",
+    "contribution": "Side story / loop fracture",
+    "type": "Side Story",
+    "description": "Echoes from the edge of spacetime \u2014 ticking clocks signal a multiversal split from the Nonagon loop."
+  },
+  {
+    "album": "Laminated Denim",
+    "year": 2022,
+    "event": "Timeland reverses; an alternate clock dimension forms",
+    "song": "Laminated Denim",
+    "contribution": "Side story",
+    "type": "Side Story",
+    "description": "A mirrored version of Timeland where time flows backward \u2014 possibly a rebalancing of chaos."
+  }
 ]
-
