@@ -128,13 +128,13 @@
   { label: "Ancient & Mythical Origins", match: ["Polygondwanaland"] },
   { label: "Mind Loops & Illusions", match: ["I'm In Your Mind Fuzz"] },
   { label: "The Nonagon Era", match: ["Nonagon Infinity", "Murder of the Universe"] },
+  { label: "Temporal Anomalies", match: ["Made in Timeland", "Laminated Denim"] },
   { label: "Alternate Realities", match: ["Sketches of Brunswick East"] },
   { label: "Collapse of Earth", match: ["Infest the Rats' Nest"] },
-  { label: "Digital Afterlife", match: ["The Silver Cord"] },
-  { label: "Flight & Descent", match: ["Flight b741", "Phantom Island"] },
-  { label: "Temporal Anomalies", match: ["Made in Timeland", "Laminated Denim"] },
+  { label: "Elemental Destruction", match: ["PetroDragonic Apocalypse"] },
   { label: "Resets & Rituals", match: ["Omnium Gatherum"] },
-  { label: "Elemental Destruction", match: ["PetroDragonic Apocalypse"] }
+  { label: "Digital Afterlife", match: ["The Silver Cord"] },
+  { label: "Flight & Descent", match: ["Flight b741", "Phantom Island"] }
 ];
 
     function renderTimeline(data) {
@@ -147,6 +147,17 @@
           const chapterHeader = document.createElement('div');
           chapterHeader.className = 'chapter';
           chapterHeader.textContent = chapter.label;
+          // 🧭 Add deep linking support
+const slugify = str => str.toLowerCase().replace(/[^\w]+/g, '-');
+chapterHeader.id = slugify(chapter.label);
+
+if (window.location.hash.slice(1) === chapterHeader.id) {
+  setTimeout(() => {
+    chapterHeader.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100);
+}
+
+timeline.appendChild(chapterHeader);
           timeline.appendChild(chapterHeader);
 
           chapterEvents.forEach(event => {
