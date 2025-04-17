@@ -1,26 +1,5 @@
 [
   {
-    "album": "Polygondwanaland",
-    "year": 2017,
-    "event": "Ancient civilization rises",
-    "song": "Crumbling Castle",
-    "contribution": "Full story album",
-    "type": "Main Story",
-    "description": "An ancient land of geometry and prophecy begins to fall, setting off the metaphysical timeline of the Gizzverse.",
-    "motif": "Castles crumbling, geometric landscapes",
-    "musical_theme": "Descending modal melodies evoking decay",
-    "symbolism": "The fall of civilizations and loss of enlightenment"
-  },
-  {
-    "album": "Polygondwanaland",
-    "year": 2017,
-    "event": "Evolution of perception and lore",
-    "song": "Tetrachromacy",
-    "contribution": "Full story album",
-    "type": "Main Story",
-    "description": "Humans evolve the ability to see more than four colors \u2014 a symbol for enhanced spiritual and perceptual awareness."
-  },
-  {
     "album": "I'm In Your Mind Fuzz",
     "year": 2014,
     "event": "Mind control and illusion begin",
@@ -55,6 +34,63 @@
     "motif": "Infinity symbols, portals, machinery",
     "musical_theme": "Songs loop into one another seamlessly",
     "symbolism": "Time as a trap, inescapable repetition"
+  },
+  {
+    "album": "Nonagon Infinity",
+    "year": 2016,
+    "event": "Wasp Man fights The People Vultures",
+    "song": "Big Fig Wasp",
+    "contribution": "Visual side lore (music video)",
+    "type": "Side Story",
+    "description": "In the music video, Wasp Man represents the chaos within, battling The People Vulture as a metaphor for identity and perception.",
+    "motif": "Infinity symbols, portals, machinery",
+    "musical_theme": "Songs loop into one another seamlessly",
+    "symbolism": "Time as a trap, inescapable repetition"
+  },
+  {
+    "album": "Nonagon Infinity",
+    "year": 2016,
+    "event": "Invisible Face Man appears in the Nonagon realm",
+    "song": "Invisible Face",
+    "contribution": "Thematic warrior",
+    "type": "Side Story",
+    "description": "Invisible Face Man symbolizes internal conflict \u2014 both seen and unseen \u2014 during the battle with The People Vulture.",
+    "motif": "Infinity symbols, portals, machinery",
+    "musical_theme": "Songs loop into one another seamlessly",
+    "symbolism": "Time as a trap, inescapable repetition"
+  },
+  {
+    "album": "Nonagon Infinity",
+    "year": 2016,
+    "event": "Robot Man enters the loop",
+    "song": "Robot Stop",
+    "contribution": "Combatant in visual lore",
+    "type": "Side Story",
+    "description": "Robot Man fights against forces beyond control, embodying mechanical determinism in the face of infinite chaos.",
+    "motif": "Infinity symbols, portals, machinery",
+    "musical_theme": "Songs loop into one another seamlessly",
+    "symbolism": "Time as a trap, inescapable repetition"
+  },
+  {
+    "album": "Polygondwanaland",
+    "year": 2017,
+    "event": "Ancient civilization rises",
+    "song": "Crumbling Castle",
+    "contribution": "Full story album",
+    "type": "Main Story",
+    "description": "An ancient land of geometry and prophecy begins to fall, setting off the metaphysical timeline of the Gizzverse.",
+    "motif": "Castles crumbling, geometric landscapes",
+    "musical_theme": "Descending modal melodies evoking decay",
+    "symbolism": "The fall of civilizations and loss of enlightenment"
+  },
+  {
+    "album": "Polygondwanaland",
+    "year": 2017,
+    "event": "Evolution of perception and lore",
+    "song": "Tetrachromacy",
+    "contribution": "Full story album",
+    "type": "Main Story",
+    "description": "Humans evolve the ability to see more than four colors \u2014 a symbol for enhanced spiritual and perceptual awareness."
   },
   {
     "album": "Murder of the Universe",
@@ -99,6 +135,52 @@
     "description": "A parallel Gizzverse timeline where harmony, jazz, and nature coexist \u2014 untouched by chaos."
   },
   {
+    "album": "Murder of the Universe",
+    "year": 2017,
+    "event": "Han-Tyumi gains self-awareness and cosmic ambition",
+    "song": "Han-Tyumi & The Murder of the Universe",
+    "contribution": "Character origin and universe-ending act",
+    "type": "Main Story",
+    "description": "Han-Tyumi, a cyborg who longs for human experiences like vomiting and death, creates the Soy-Protein Munt Machine. Their fusion triggers uncontrollable vomiting and the end of the universe.",
+    "motif": "Wires, decay, green vomit",
+    "musical_theme": "Narration with synth swells, robotic stutter",
+    "symbolism": "Techno-narcissism and the existential limits of AI"
+  },
+  {
+    "album": "Murder of the Universe",
+    "year": 2017,
+    "event": "A human merges with Altered Beast",
+    "song": "Altered Beast I\u2013IV",
+    "contribution": "Transformation allegory",
+    "type": "Main Story",
+    "description": "A man fuses with the Altered Beast to gain power, but loses his humanity, becoming a mindless hybrid consumed by instinct."
+  },
+  {
+    "album": "Polygondwanaland",
+    "year": 2017,
+    "event": "Mythic explorers discover the fractured realm of Polygondwanaland",
+    "song": "Crumbling Castle",
+    "contribution": "Geographic worldbuilding",
+    "type": "Main Story",
+    "description": "Explorers discover the geometrically unstable world of Polygondwanaland, expanding the map of the Gizzverse and its metaphysical laws.",
+    "motif": "Castles crumbling, geometric landscapes",
+    "musical_theme": "Descending modal melodies evoking decay",
+    "symbolism": "The fall of civilizations and loss of enlightenment"
+  },
+  {
+    "album": "Murder of the Universe",
+    "year": 2017,
+    "event": "The Lord of Lightning Awakens and Battles Balrog",
+    "song": "The Lord of Lightning",
+    "type": "Main Story",
+    "contribution": "Mythic duality, resurrection, and elemental war",
+    "description": "The Lord of Lightning resurrects Balrog in a catastrophic clash of life and death. This sets off a destructive battle between opposing cosmic forces. This event also encompasses the entire suite including 'The Lord of Lightning vs. Balrog'.",
+    "motif": "Lightning bolts, rebirth, chaos",
+    "musical_theme": "Heavy psychedelic riffs; the suite transitions into Balrog\u2019s theme",
+    "symbolism": "Creation through destruction \u2014 the divine cycle of power",
+    "spotify_uri": "spotify:track:5pSGph2miyfIFPUTInd8cB"
+  },
+  {
     "album": "Infest the Rats' Nest",
     "year": 2019,
     "event": "Earth collapses from climate catastrophe",
@@ -121,57 +203,6 @@
     "motif": "Industrial wastelands, radiation symbols",
     "musical_theme": "Thrash metal motifs with repeated doomsday patterns",
     "symbolism": "Ecological collapse and elitist exodus"
-  },
-  {
-    "album": "The Silver Cord",
-    "year": 2023,
-    "event": "Humanity uploads consciousness into a simulation",
-    "song": "Theia",
-    "contribution": "Full story album",
-    "type": "Main Story",
-    "description": "As biology becomes obsolete, minds are uploaded into a utopian digital continuum.",
-    "motif": "Virtual spaces, chrome architecture",
-    "musical_theme": "Digital arpeggios, synth-drenched ambiance",
-    "symbolism": "Humanity's transcendence or erasure through tech"
-  },
-  {
-    "album": "The Silver Cord",
-    "year": 2023,
-    "event": "Digital immortality begins; bodies extinct",
-    "song": "Extinction",
-    "contribution": "Full story album",
-    "type": "Main Story",
-    "description": "Human life as we know it ends. Data and consciousness persist in an eternal loop.",
-    "motif": "Virtual spaces, chrome architecture",
-    "musical_theme": "Digital arpeggios, synth-drenched ambiance",
-    "symbolism": "Humanity's transcendence or erasure through tech"
-  },
-  {
-    "album": "Flight b741",
-    "year": 2024,
-    "event": "Pilot flees society, descends into crisis mid-flight",
-    "song": "Flight b741",
-    "contribution": "Loose concept album",
-    "type": "Main Story",
-    "description": "A pilot experiences a personal and existential crisis while escaping a doomed Earth."
-  },
-  {
-    "album": "Phantom Island",
-    "year": 2024,
-    "event": "Passengers hallucinate mythic beings on mysterious island",
-    "song": "Phantom Island",
-    "contribution": "Side story",
-    "type": "Side Story",
-    "description": "The descent ends in a surreal realm where hallucination and reality merge in psychological horror."
-  },
-  {
-    "album": "PetroDragonic Apocalypse",
-    "year": 2023,
-    "event": "Earth annihilated in fire and acid",
-    "song": "Gila Monster",
-    "contribution": "Full story album",
-    "type": "Main Story",
-    "description": "Apocalyptic fire, elemental dragons, and revenge against a planet-consuming industrial age."
   },
   {
     "album": "Omnium Gatherum",
@@ -201,96 +232,54 @@
     "description": "A mirrored version of Timeland where time flows backward \u2014 possibly a rebalancing of chaos."
   },
   {
-    "album": "Murder of the Universe",
-    "year": 2017,
-    "event": "Han-Tyumi gains self-awareness and cosmic ambition",
-    "song": "Han-Tyumi & The Murder of the Universe",
-    "contribution": "Character origin and universe-ending act",
+    "album": "The Silver Cord",
+    "year": 2023,
+    "event": "Humanity uploads consciousness into a simulation",
+    "song": "Theia",
+    "contribution": "Full story album",
     "type": "Main Story",
-    "description": "Han-Tyumi, a cyborg who longs for human experiences like vomiting and death, creates the Soy-Protein Munt Machine. Their fusion triggers uncontrollable vomiting and the end of the universe.",
-    "motif": "Wires, decay, green vomit",
-    "musical_theme": "Narration with synth swells, robotic stutter",
-    "symbolism": "Techno-narcissism and the existential limits of AI"
+    "description": "As biology becomes obsolete, minds are uploaded into a utopian digital continuum.",
+    "motif": "Virtual spaces, chrome architecture",
+    "musical_theme": "Digital arpeggios, synth-drenched ambiance",
+    "symbolism": "Humanity's transcendence or erasure through tech"
   },
   {
-    "album": "Murder of the Universe",
-    "year": 2017,
-    "event": "The Lord of Lightning revives Balrog",
-    "song": "The Lord of Lightning vs. Balrog",
-    "contribution": "Elemental conflict",
+    "album": "The Silver Cord",
+    "year": 2023,
+    "event": "Digital immortality begins; bodies extinct",
+    "song": "Extinction",
+    "contribution": "Full story album",
     "type": "Main Story",
-    "description": "The Lord of Lightning accidentally brings Balrog to life. Their battle unleashes destructive energy through multiple dimensions.",
-    "motif": "Lightning bolts, cosmic duels",
-    "musical_theme": "Heavy psychedelic guitar and thematic reprises",
-    "symbolism": "The chaotic force of nature meeting corruption"
+    "description": "Human life as we know it ends. Data and consciousness persist in an eternal loop.",
+    "motif": "Virtual spaces, chrome architecture",
+    "musical_theme": "Digital arpeggios, synth-drenched ambiance",
+    "symbolism": "Humanity's transcendence or erasure through tech"
   },
   {
-    "album": "Murder of the Universe",
-    "year": 2017,
-    "event": "A human merges with Altered Beast",
-    "song": "Altered Beast I\u2013IV",
-    "contribution": "Transformation allegory",
+    "album": "PetroDragonic Apocalypse",
+    "year": 2023,
+    "event": "Earth annihilated in fire and acid",
+    "song": "Gila Monster",
+    "contribution": "Full story album",
     "type": "Main Story",
-    "description": "A man fuses with the Altered Beast to gain power, but loses his humanity, becoming a mindless hybrid consumed by instinct."
+    "description": "Apocalyptic fire, elemental dragons, and revenge against a planet-consuming industrial age."
   },
   {
-    "album": "Nonagon Infinity",
-    "year": 2016,
-    "event": "Wasp Man fights The People Vultures",
-    "song": "Big Fig Wasp",
-    "contribution": "Visual side lore (music video)",
-    "type": "Side Story",
-    "description": "In the music video, Wasp Man represents the chaos within, battling The People Vulture as a metaphor for identity and perception.",
-    "motif": "Infinity symbols, portals, machinery",
-    "musical_theme": "Songs loop into one another seamlessly",
-    "symbolism": "Time as a trap, inescapable repetition"
-  },
-  {
-    "album": "Nonagon Infinity",
-    "year": 2016,
-    "event": "Invisible Face Man appears in the Nonagon realm",
-    "song": "Invisible Face",
-    "contribution": "Thematic warrior",
-    "type": "Side Story",
-    "description": "Invisible Face Man symbolizes internal conflict \u2014 both seen and unseen \u2014 during the battle with The People Vulture.",
-    "motif": "Infinity symbols, portals, machinery",
-    "musical_theme": "Songs loop into one another seamlessly",
-    "symbolism": "Time as a trap, inescapable repetition"
-  },
-  {
-    "album": "Nonagon Infinity",
-    "year": 2016,
-    "event": "Robot Man enters the loop",
-    "song": "Robot Stop",
-    "contribution": "Combatant in visual lore",
-    "type": "Side Story",
-    "description": "Robot Man fights against forces beyond control, embodying mechanical determinism in the face of infinite chaos.",
-    "motif": "Infinity symbols, portals, machinery",
-    "musical_theme": "Songs loop into one another seamlessly",
-    "symbolism": "Time as a trap, inescapable repetition"
-  },
-  {
-    "album": "Murder of the Universe",
-    "year": 2017,
-    "event": "The Prey is hunted by The Lord of Lightning",
-    "song": "The Lord of Lightning",
-    "contribution": "Victim of elemental conflict",
-    "type": "Side Story",
-    "description": "The Prey represents mortality and vulnerability as they are pursued and destroyed by the uncontrollable wrath of The Lord of Lightning.",
-    "motif": "Lightning bolts, cosmic duels",
-    "musical_theme": "Heavy psychedelic guitar and thematic reprises",
-    "symbolism": "The chaotic force of nature meeting corruption"
-  },
-  {
-    "album": "Polygondwanaland",
-    "year": 2017,
-    "event": "Mythic explorers discover the fractured realm of Polygondwanaland",
-    "song": "Crumbling Castle",
-    "contribution": "Geographic worldbuilding",
+    "album": "Flight b741",
+    "year": 2024,
+    "event": "Pilot flees society, descends into crisis mid-flight",
+    "song": "Flight b741",
+    "contribution": "Loose concept album",
     "type": "Main Story",
-    "description": "Explorers discover the geometrically unstable world of Polygondwanaland, expanding the map of the Gizzverse and its metaphysical laws.",
-    "motif": "Castles crumbling, geometric landscapes",
-    "musical_theme": "Descending modal melodies evoking decay",
-    "symbolism": "The fall of civilizations and loss of enlightenment"
+    "description": "A pilot experiences a personal and existential crisis while escaping a doomed Earth."
+  },
+  {
+    "album": "Phantom Island",
+    "year": 2024,
+    "event": "Passengers hallucinate mythic beings on mysterious island",
+    "song": "Phantom Island",
+    "contribution": "Side story",
+    "type": "Side Story",
+    "description": "The descent ends in a surreal realm where hallucination and reality merge in psychological horror."
   }
 ]
