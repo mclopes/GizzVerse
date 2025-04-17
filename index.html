@@ -40,6 +40,16 @@
       align-items: center;
       padding: 1rem;
     }
+    .chapter {
+      width: 100%;
+      max-width: 600px;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin: 2rem 0 1rem;
+      padding-bottom: 0.25rem;
+      border-bottom: 2px solid #ff3c00;
+      color: #ff3c00;
+    }
     .event {
       background: rgba(255, 60, 0, 0.1);
       border: 1px solid #ff3c00;
@@ -114,31 +124,50 @@
     let allEvents = [];
     let currentFilter = 'All';
 
+    const chapters = [
+      { label: "Ancient & Mythical Origins", match: ["Polygondwanaland"] },
+      { label: "Mind Loops & Illusions", match: ["I'm In Your Mind Fuzz"] },
+      { label: "The Nonagon Era", match: ["Nonagon Infinity", "Murder of the Universe"] },
+      { label: "Alternate Realities", match: ["Sketches of Brunswick East"] },
+      { label: "Collapse of Earth", match: ["Infest the Rats' Nest"] },
+      { label: "Digital Afterlife", match: ["The Silver Cord"] },
+      { label: "Flight & Descent", match: ["Flight b741", "Phantom Island"] }
+    ];
+
     function renderTimeline(data) {
       const timeline = document.getElementById('timeline');
       timeline.innerHTML = '';
-      data.forEach(event => {
-        if (currentFilter !== 'All' && event.type !== currentFilter) return;
 
-        const div = document.createElement('div');
-        div.className = 'event';
+      chapters.forEach(chapter => {
+        const chapterEvents = data.filter(event => chapter.match.includes(event.album) && (currentFilter === 'All' || event.type === currentFilter));
+        if (chapterEvents.length > 0) {
+          const chapterHeader = document.createElement('div');
+          chapterHeader.className = 'chapter';
+          chapterHeader.textContent = chapter.label;
+          timeline.appendChild(chapterHeader);
 
-        const albumCover = wikiCovers[event.album] || '';
-        const albumImageHTML = albumCover ? `<img src="${albumCover}" alt="${event.album} Cover" class="album-art">` : '';
+          chapterEvents.forEach(event => {
+            const div = document.createElement('div');
+            div.className = 'event';
 
-        div.innerHTML = `
-          <h2>${event.event}</h2>
-          <div class="meta">
-            <strong>Album:</strong> ${event.album} (${event.year})<br>
-            <strong>Song:</strong> ${event.song}<br>
-            <strong>Type:</strong> ${event.type}<br>
-            <strong>Contribution:</strong> ${event.contribution}
-          </div>
-          <p>${event.description}</p>
-          ${albumImageHTML}
-          <iframe src="https://open.spotify.com/embed/search/${encodeURIComponent(event.song + ' ' + event.album)}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        `;
-        timeline.appendChild(div);
+            const albumCover = wikiCovers[event.album] || '';
+            const albumImageHTML = albumCover ? `<img src="${albumCover}" alt="${event.album} Cover" class="album-art">` : '';
+
+            div.innerHTML = `
+              <h2>${event.event}</h2>
+              <div class="meta">
+                <strong>Album:</strong> ${event.album} (${event.year})<br>
+                <strong>Song:</strong> ${event.song}<br>
+                <strong>Type:</strong> ${event.type}<br>
+                <strong>Contribution:</strong> ${event.contribution}
+              </div>
+              <p>${event.description}</p>
+              ${albumImageHTML}
+              <iframe src="https://open.spotify.com/embed/search/${encodeURIComponent(event.song + ' ' + event.album)}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            `;
+            timeline.appendChild(div);
+          });
+        }
       });
     }
 
@@ -149,7 +178,7 @@
       renderTimeline(allEvents);
     }
 
-    fetch('https://mclopes.github.io/GizzVerse/gizzverse_timeline_full.json')
+    fetch('https://mclopes.github.io/GizzVerse/gizzverse_timeline.json')
       .then(response => response.json())
       .then(data => {
         allEvents = data;
