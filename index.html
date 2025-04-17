@@ -116,7 +116,7 @@ timeline.appendChild(chapterHeader);
               </div>
               <p>${event.description}</p>
               ${albumImageHTML}
-              <iframe src="https://open.spotify.com/embed/search/${encodeURIComponent(event.song + ' ' + event.album)}" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              ${event.spotify_uri ? `<iframe src="https://open.spotify.com/embed/track/${event.spotify_uri.split(':').pop()}" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>` : `<p><a href="https://open.spotify.com/search/${encodeURIComponent(event.song + ' ' + event.album)}" target="_blank" style="color:#1DB954;font-weight:bold;">🎧 Search on Spotify</a></p>`}
             
           ${event.motif ? `<p><strong>🌀 Motif:</strong> ${event.motif}</p>` : ''}
           ${event.musical_theme ? `<p><strong>🎶 Musical Theme:</strong> ${event.musical_theme}</p>` : ''}
