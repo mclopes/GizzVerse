@@ -1,5 +1,4 @@
-# Recreate the JSON file again with image and music embed placeholders for each entry
-gizzverse_data_embeds = [
+[
     {
         "album": "Polygondwanaland",
         "year": 2017,
@@ -68,9 +67,3 @@ gizzverse_data_embeds = [
     }
 ]
 
-# Save to JSON file with embeds
-json_embeds_path = "/mnt/data/gizzverse_timeline_embeds.json"
-with open(json_embeds_path, "w") as f:
-    json.dump(gizzverse_data_embeds, f, indent=2)
-
-json_embeds_path
